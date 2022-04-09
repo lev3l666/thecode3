@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1 class="titulo">Estamos construyendo algo genial!</h1>
     <img src="../assets/construction-octopus.svg" alt="Hello there!" class="center">
     <p id="counterText">{{days}}D {{hours}}H<br>
       {{minutes}}M {{seconds}}S</p>
@@ -52,6 +53,19 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+.titulo {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  top: 10.5vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: top ;
+  justify-content: center;
+  position: absolute;
 }
 
 #counterText {
