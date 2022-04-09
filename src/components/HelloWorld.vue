@@ -1,10 +1,8 @@
 <template>
-  <div id="ew">
+  <div>
     <img src="../assets/construction-octopus.svg" alt="Hello there!" class="center">
-    <h1>Days: {{days}}</h1>
-    <h1>minutes: {{minutes}}</h1>
-    <h1>seconds: {{seconds}}</h1>
-    <h1>hours: {{hours}}</h1>
+    <p id="counterText">{{days}}D {{hours}}H<br>
+      {{minutes}}M {{seconds}}S</p>
   </div>
 </template>
 
@@ -56,9 +54,19 @@ html {
   width: 100%;
 }
 
-#contador {
+#counterText {
   text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
+  font-size: 2vh;
+  color: black;
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  top: 20.5vw;
+  left: 1.4vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: top ; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+  transform: rotate(-15deg);
 }
 </style>
