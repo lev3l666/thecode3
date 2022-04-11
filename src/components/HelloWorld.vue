@@ -1,9 +1,11 @@
 <template>
   <div>
-    <h1 class="titulo">Estamos construyendo algo genial!</h1>
-    <img src="../assets/construction-octopus.svg" alt="Hello there!" class="center">
-    <p id="counterText">{{days}}D {{hours}}H<br>
-      {{minutes}}M {{seconds}}S</p>
+    <h1 class="title">Estamos construyendo algo genial!</h1>
+   <div id="octopus">
+      <img src="../assets/construction-octopus.svg" alt="Hello there!" >
+      <p id="octopus-text">{{days}}D {{hours}}H<br>
+        {{minutes}}M {{seconds}}S</p>
+   </div>
   </div>
 </template>
 
@@ -40,6 +42,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;400&display=swap');
+
 html {
   background: url('../assets/construction-background.svg') no-repeat center center !important;
   -webkit-background-size: contain;
@@ -48,15 +52,17 @@ html {
   background-size: contain;
   background-color: rgb(28, 28, 28) !important;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#octopus {
+  display: inline-block;
+  position: relative;
+  /* this will center the image in the container */
+  margin: 0 auto;
   width: 100%;
 }
-.titulo {
-  font-size: 2.5em;
-  font-weight: bold;
+.title {
+  font-family: 'Anek Tamil', sans-serif;
+  font-size: 4.5vw;
+  font-weight: 100;
   color: #fff;
   text-align: center;
   top: 10.5vw;
@@ -68,19 +74,17 @@ html {
   position: absolute;
 }
 
-#counterText {
+#octopus-text {
+  font-family: 'Anek Tamil', sans-serif;
   text-align: center;
-  font-size: 2vh;
+  font-size: 1.4vw;
   color: black;
   text-shadow: 1px 1px 2px black;
   position: absolute;
-  top: 20.5vw;
-  left: 1.4vw;
+  top: 19.8vw;
+  left: 1.5vw;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: top ; /** Y-axis align **/
-  justify-content: center; /** X-axis align **/
-  transform: rotate(-15deg);
+  transform: rotate(-14deg);
 }
 </style>
