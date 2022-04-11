@@ -16,7 +16,7 @@
 </template>
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'OnConstruction',
   data() {
     return {
       days: 30,
