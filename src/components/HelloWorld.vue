@@ -1,14 +1,19 @@
 <template>
   <div>
-    <h1 class="title">Estamos construyendo algo genial!</h1>
-   <div id="octopus">
-      <img src="../assets/construction-octopus.svg" alt="Hello there!" >
-      <p id="octopus-text">{{days}}D {{hours}}H<br>
-        {{minutes}}M {{seconds}}S</p>
-   </div>
+  <h1 class="title">¡Estamos construyendo algo genial!</h1>
+  <div id="octopus">
+    <img src="../assets/construction-octopus.svg" alt="Hello there!" >
+    <p id="octopus-text">{{days}}D {{hours}}H<br>
+      {{minutes}}M {{seconds}}S</p>
+  </div>
+  <a href="https://api.whatsapp.com/send?phone=573135469034&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <a href="https://www.instagram.com/thec0de3/" class="float instagram" target="_blank">
+    <i class="fa fa-instagram my-float instagram"></i>
+  </a>
   </div>
 </template>
-
 <script>
 export default {
   name: 'HelloWorld',
@@ -43,6 +48,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;400&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
 html {
   background: url('../assets/construction-background.svg') no-repeat center center !important;
@@ -87,4 +93,28 @@ html {
   height: 100%;
   transform: rotate(-14deg);
 }
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:black;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px rgb(26,204,206);
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+.instagram {
+  background-color: #E1306C !important;
+  right: 120px !important;
+}
+
 </style>
