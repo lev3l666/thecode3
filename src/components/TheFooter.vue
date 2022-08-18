@@ -73,5 +73,15 @@ export default {
   width: 17%;
   bottom: 10%;
   right: 55%;
+  animation: fishHorizontal 1.5s ease-in-out infinite;
+}
+
+@keyframes fishHorizontal {
+  0%, 100% {
+    left: 30%;
+  }
+  30% {
+    left: 25%;
+  }
 }
 </style>
