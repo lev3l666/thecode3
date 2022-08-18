@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <svg version="1.1"
-     baseProfile="full"
-     width="300" height="200"
-     xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="black" />
-  <circle cx="150" cy="100" r="90" fill="blue" />
-</svg>
-    <svg src="../assets/bckgcode-05.svg" alt="damnn" style="width: 100%;" height="300px"></svg>
+    <footerBG/>
   </div>
 </template>
 <script>
+// import footerImg from "../assets/bckgcode05.svg"
+import footerBG from "./footerBG.vue";
 export default {
   name: 'TheFooter',
+  components: {
+    footerBG,
+},
   data() {
     return {
     };
