@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <OnConstruction/>
   </div>
 </template>
 <script>
 export default {
-  name: 'theFooter',
+  name: 'TheFooter',
   data() {
     return {
     };
