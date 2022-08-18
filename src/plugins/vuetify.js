@@ -7,14 +7,9 @@ Vue.use(Vuetify)
 export default new Vuetify({
   theme: {
     dark: true,
+    options: { customProperties: true },
     themes: {
-      light: {
-        primary: colors.purple,
-        secondary: colors.grey.darken1,
-        accent: colors.shades.black, 
-        error: colors.red.accent3,
-      },
-      dark: {
+    dark: {
         primary: '#09ffff',
         secondary: colors.blueGrey.lighten2,
         accent: colors.blueGrey.darken3,
