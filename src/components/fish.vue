@@ -331,12 +331,12 @@ export default {
   }
   @keyframes moverAletas {
     0%,100% { transform: rotateY(0deg);}
-    50% { transform: rotateY(30deg); }
+    90% { transform: rotateY(35deg); }
   }
 
   @keyframes moverAletas2 {
     0%,100% { transform: rotateY(0deg); }
-    50% { transform: rotateY(10deg); }
+    95% { transform: rotateY(15deg); }
   }
     
 </style>
