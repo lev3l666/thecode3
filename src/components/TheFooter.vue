@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card height="600px">
-      <v-footer app bottom fixed padless>
+      <v-footer app bottom absolute padless width="100%" style="width:100% !important">
         <v-card
           flat
           tile
@@ -43,8 +43,8 @@
 <script>
 // import footerImg from "../assets/bckgcode05.svg"
 // import footerBG from "./footerBG.vue";
-import fishImg from "./fish.vue";
-import logoImg from "./logoImg2.vue";
+import fishImg from "./svg/fish.vue";
+import logoImg from "./svg/logoImg.vue";
 export default {
   name: 'TheFooter',
   components: {
@@ -65,7 +65,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .footer-card {
   background-image: url(../assets/bckgcode05.svg);
   width: 100%;

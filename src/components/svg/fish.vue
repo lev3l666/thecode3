@@ -233,7 +233,7 @@ export default {
     },
 }
 </script>
-<style>
+<style scoped>
   .pez-cuerpo {
     fill: url(#Degradado_sin_nombre_5);
   }

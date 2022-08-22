@@ -58,7 +58,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
   #LOGOTIPO {
     /* animation: identifier 1.5s linear forwards infinite; */
     filter: drop-shadow(0px 0px 0.5vw #000000);
