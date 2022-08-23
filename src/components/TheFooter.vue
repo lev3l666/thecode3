@@ -1,13 +1,15 @@
 <template>
-  <div>
+  <div id="elFooter">
+    <footerImg class="footer-component" id="mierda"/>
     <v-card height="600px">
       <v-footer app bottom absolute padless width="100%" style="width:100% !important">
         <v-card
           flat
           tile
           width="100%"
-          class="lighten-1 text-center footer-card"
+          class="lighten-1 footer-card text-center"
         >
+        
           <v-row align="center" justify="center" class="ma-12">
             <v-col cols="12" md="6">
               <span>
@@ -45,10 +47,13 @@
 // import footerBG from "./footerBG.vue";
 import fishImg from "./svg/fish.vue";
 import logoImg from "./svg/logoImg.vue";
+import footerImg from "./svg/footerImg.vue";
+
 export default {
   name: 'TheFooter',
   components: {
     // footerBG,
+    footerImg,
     fishImg,
     logoImg,
 },
@@ -71,6 +76,15 @@ export default {
   width: 100%;
   background-size: cover;
   padding-top: 10%;
+  
+}
+
+.footer-component {
+  /* background-image: url(../assets/bckgcode05.svg); */
+  /* background-color: red; */
+  /* background-size: cover;
+  padding-top: 10%;*/
+  z-index: 9999;
 }
 
 /* fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit

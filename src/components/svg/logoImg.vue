@@ -65,22 +65,22 @@ export default {
   }
 
   .clsj3e489239 {
-    fill: #10a2a2;
+    fill: var(--v-primary-base);
+    filter: brightness(0.4);
     /* fill: #212734; */
   }
   .cls-logo-3 {
-    fill: #8dfaf0;
+    fill: var(--v-primary-base);
+    /* filter: drop-shadow(0px 0px 0.8vw var(--v-primary-base)) ; */
     animation: identifier 1.5s linear forwards infinite;;
   }
 
   @keyframes identifier {
     0%, 100% {
-      fill: #10a2a2;
-      filter: drop-shadow(0px 0px 0.5vw #000000);
+      filter: brightness(0.5) drop-shadow(0px 0px 0.7vw black);
     }
     45% {
-      fill: #8dfaf0;
-      filter: drop-shadow(0px 0px 0.7vw #4bfcfc);
+      filter: brightness(1.5) drop-shadow(0px 0px 0.7vw var(--v-primary-base));
     }
   }
     

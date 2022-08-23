@@ -2317,7 +2317,7 @@
 </template>
 <script>
 export default {
-   name: 'fishImg',
+   name: 'calamarOficinista',
     data () {
         return {
             extras: false
