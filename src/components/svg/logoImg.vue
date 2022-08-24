@@ -77,10 +77,10 @@ export default {
 
   @keyframes identifier {
     0%, 100% {
-      filter: brightness(0.5) drop-shadow(0px 0px 0.7vw black);
+      filter: brightness(0.5) drop-shadow(0px 0px 0.7rem black);
     }
     45% {
-      filter: brightness(1.5) drop-shadow(0px 0px 0.7vw var(--v-primary-base));
+      filter: brightness(1.5) drop-shadow(0px 0px 0.7rem var(--v-primary-base));
     }
   }
     

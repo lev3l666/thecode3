@@ -1,6 +1,6 @@
 <template>
   <div id="elFooter">
-    <footerImg class="footer-component" id="mierda"/>
+    <!-- <footerImg class="footer-component" id="mierda"/> -->
     <v-card height="600px">
       <v-footer app bottom absolute padless width="100%" style="width:100% !important">
         <v-card
@@ -47,13 +47,13 @@
 // import footerBG from "./footerBG.vue";
 import fishImg from "./svg/fish.vue";
 import logoImg from "./svg/logoImg.vue";
-import footerImg from "./svg/footerImg.vue";
+// import footerImg from "./svg/footerImg.vue";
 
 export default {
   name: 'TheFooter',
   components: {
     // footerBG,
-    footerImg,
+    // footerImg,
     fishImg,
     logoImg,
 },
