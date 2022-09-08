@@ -1,5 +1,6 @@
 <template>
   <v-app id="inspire">
+    <footerImg class="footer-background"/>
     <div class="thing2">
       <div>
         <svg id="salpicadura" width="100%" height="100%" viewBox="0 0 820 799" xmlns="http://www.w3.org/2000/svg">
@@ -40,6 +41,7 @@
 <script>
 // import TheHeader from './TheHeader.vue';
 import TheFooter from './TheFooter.vue';
+import footerImg from "./svg/footerImg.vue";
 // import thePortfolio from './thePortfolio.vue';
 import calamarOficinista from './svg/calamarOficinista.vue';
 import submarinoImg from './svg/submarinoImg.vue';
@@ -53,6 +55,7 @@ export default {
     // TheHeader,
     calamarOficinista,
     submarinoImg,
+    footerImg,
     // salpicaduraBanner,
 },
   data: () => ({
@@ -215,6 +218,13 @@ export default {
     filter: drop-shadow(0px 0px 0.5vw var(--v-primary-base));
     }
 
+.footer-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+}
+
 .footer-component {
   /* background-image: url(../assets/bckgcode05.svg); */
   background-size: cover;
@@ -222,6 +232,8 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0%;
+  background-color: transparent !important;
+  opacity: 0;
   z-index: 800;
 }
   .theme-option  {

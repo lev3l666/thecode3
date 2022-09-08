@@ -1,13 +1,14 @@
 <template>
   <div id="elFooter">
     <!-- <footerImg class="footer-component" id="mierda"/> -->
-    <v-card height="600px">
-      <v-footer app bottom absolute padless width="100%" style="width:100% !important">
+    <v-card height="600px" color="transparent">
+      <v-footer app bottom absolute padless width="100%" style="width:100% !important; background-color: transparent !important;">
         <v-card
           flat
           tile
           width="100%"
           class="lighten-1 footer-card text-center"
+          color="transparent"
         >
         
           <v-row align="center" justify="center" class="ma-12">
@@ -72,10 +73,11 @@ export default {
 </script>
 <style scoped>
 .footer-card {
-  background-image: url(../assets/bckgcode05.svg);
+  /* background-image: url(../assets/bckgcode05.svg);
   width: 100%;
   background-size: cover;
-  padding-top: 10%;
+  padding-top: 10%; */
+  background-color: transparent;
   
 }
 
