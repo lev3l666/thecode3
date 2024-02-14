@@ -1,6 +1,6 @@
 <template>
   <div>
-  <h1 class="title">¡Estamos construyendo algo genial!</h1>
+  <h1 class="text-h6">¡Estamos construyendo algo genial!</h1>
   <div id="octopus">
     <img src="../assets/construction-octopus.svg" alt="Hello there!" >
     <p id="octopus-text">{{days}}D {{hours}}H<br>

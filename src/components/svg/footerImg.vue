@@ -414,6 +414,9 @@ export default {
 }
 </script>
 <style>
+   svg {
+      background-size: cover;
+   }
     .footerimg-cls-1 {
     fill: url(#footerimg-Degradado_sin_nombre_1116);
     }
@@ -736,7 +739,7 @@ export default {
     }
 
     .color-primario {
-    fill: var(--v-primary-base)
+    fill: rgb(var(--v-theme-primary))
     }
 
     .footerimg-cls-77 {

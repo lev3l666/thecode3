@@ -1,5 +1,9 @@
 <template>
-  <theLanding/>
+  <v-app>
+    <v-main>
+      <theLanding/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
@@ -17,3 +21,4 @@ export default {
   }),
 };
 </script>
+

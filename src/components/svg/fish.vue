@@ -54,7 +54,7 @@
       </g>
     </mask>
     <radialGradient id="Degradado_sin_nombre_206" cx="77.73" cy="79.98" r="3.62" gradientTransform="translate(118.16 -23.96) rotate(65.44)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="var(--v-primary-base)"/>
+      <stop offset="0" stop-color="rgb(var(--v-theme-primary))"/>
       <stop offset="1" stop-color="rgba(0, 0, 0, 0.644)" stop-opacity="1"/>
     </radialGradient>
   </defs>
@@ -308,7 +308,7 @@ export default {
   }
 
   .cls-16 {
-    fill: var(--v-primary-base);
+    fill: rgb(var(--v-theme-primary));
     animation: luzIntermitente 1.5s linear forwards infinite;
   }
 
@@ -317,7 +317,7 @@ export default {
       filter:none;
     }
     35% {
-      filter: drop-shadow(0px 0px 7px var(--v-primary-base)) drop-shadow(0px 0px 7px var(--v-primary-base)) drop-shadow(0px 0px 7px var(--v-primary-base)) drop-shadow(0px 0px 7px var(--v-primary-base)) drop-shadow(0px 0px 7px var(--v-primary-base));
+      filter: drop-shadow(0px 0px 7px rgb(var(--v-theme-primary))) drop-shadow(0px 0px 7px rgb(var(--v-theme-primary))) drop-shadow(0px 0px 7px rgb(var(--v-theme-primary))) drop-shadow(0px 0px 7px rgb(var(--v-theme-primary))) drop-shadow(0px 0px 7px rgb(var(--v-theme-primary)));
       }
   }
 

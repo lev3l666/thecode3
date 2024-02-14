@@ -65,13 +65,13 @@ export default {
   }
 
   .clsj3e489239 {
-    fill: var(--v-primary-base);
+    fill: rgb(var(--v-theme-primary));
     filter: brightness(0.4);
     /* fill: #212734; */
   }
   .cls-logo-3 {
-    fill: var(--v-primary-base);
-    /* filter: drop-shadow(0px 0px 0.8vw var(--v-primary-base)) ; */
+    fill: rgb(var(--v-theme-primary));
+    /* filter: drop-shadow(0px 0px 0.8vw rgb(var(--v-theme-primary))) ; */
     animation: identifier 1.5s linear forwards infinite;;
   }
 
@@ -80,7 +80,7 @@ export default {
       filter: brightness(0.5) drop-shadow(0px 0px 0.7rem black);
     }
     45% {
-      filter: brightness(1.5) drop-shadow(0px 0px 0.7rem var(--v-primary-base));
+      filter: brightness(1.5) drop-shadow(0px 0px 0.7rem rgb(var(--v-theme-primary)));
     }
   }
     

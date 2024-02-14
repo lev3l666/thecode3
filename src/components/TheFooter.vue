@@ -2,12 +2,12 @@
   <div id="elFooter">
     <!-- <footerImg class="footer-component" id="mierda"/> -->
     <v-card height="600px" color="transparent">
-      <v-footer app bottom absolute padless width="100%" style="width:100% !important; background-color: transparent !important;">
+      <v-footer app bottom absolute style="width:100% !important; background-color: transparent !important;">
         <v-card
           flat
-          tile
+          rounded="0"
           width="100%"
-          class="lighten-1 footer-card text-center"
+          class="text-red-lighten-1 footer-card text-center"
           color="transparent"
         >
         
@@ -33,8 +33,8 @@
 
           <v-divider></v-divider>
 
-          <v-card-text class="primary-text">
-            Envigado, Colombia {{ new Date().getFullYear() }} — Desarrollo y diseño por <strong>CODE3</strong>
+          <v-card-text class="primary-text" style="margin-bottom: 0;">
+            Medellín, Colombia {{ new Date().getFullYear() }} — Desarrollo y diseño por <strong>CODE3</strong>
           </v-card-text>
         </v-card>
       </v-footer>
@@ -102,7 +102,7 @@ scale-down - the image is */
 }
 
 .primary-text {
-  color: var(--v-primary-base) !important;
+  color: rgb(var(--v-theme-primary)) !important;
 }
 
 .div-container {

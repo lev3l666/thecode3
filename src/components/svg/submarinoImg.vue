@@ -2484,12 +2484,17 @@ export default {
     }
 
     #helice1, #helice2 {
-        animation: girarHelice 2s linear forwards infinite;
+        -webkit-animation: girarHelice 2s linear forwards infinite;
+        -moz-animation: girarHelice 2s linear forwards infinite;
         transform-origin: 50% 52%;
+        z-index: 1;
     }
+
     @keyframes girarHelice {
         0% { transform: rotate3d(1, 0, 0, 0deg); }
-        100% { transform: rotate3d(1, 0, 0, 180deg); }
+        50% { transform: rotate3d(1, 0, 0, 100deg); }
+        100% { transform: rotate3d(1, 0, 0, 180deg);  z-index: 1; }
+
     }
 
     @keyframes moverBrazo {
