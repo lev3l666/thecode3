@@ -13,7 +13,7 @@
       </div>
       <div class="thing" @mouseenter="toFancy()" @mouseleave="toSimple()">
         <span v-for="(theme, index) in themes" :key="index" class="avatar-container">
-            <v-avatar @updated="viewThemes('all')" v-if="viewElements.includes(index)" class="theme-option" size="40" @click="toggleTheme()" :style="`background-image:linear-gradient(180deg, ${theme.dark.primary} 0%, ${theme.dark.secondary} 80%, ${theme.dark.background} 100%);`">
+            <v-avatar @updated="viewThemes('all')" v-if="viewElements.includes(index)" class="theme-option" size="40" @click="toggleTheme(theme.name)" :style="`background-image:linear-gradient(180deg, ${theme.dark.primary} 0%, ${theme.dark.secondary} 80%, ${theme.dark.background} 100%);`">
             <h4 :style="`color: ${theme.dark.secondary}; font-size: 0.8em;`">{{theme.name}}</h4>
             </v-avatar>
         </span>
@@ -43,8 +43,9 @@ import { useTheme } from 'vuetify'
 
 const theme = useTheme()
 
-function toggleTheme () {
-  theme.global.name.value = theme.global.current.value.dark ? 'code3DefaultDark' : 'myCustomLightTheme'
+function toggleTheme (themeName) {
+  // theme.global.name.value = theme.global.current.value.dark ? 'code3DefaultDark' : 'myCustomLightTheme'
+  theme.global.name.value = themeName;
 }
 </script>
 <script>
@@ -77,7 +78,7 @@ export default {
       viewElements: [0],
     themes: [
       {
-        name: "Code3",
+        name: "code3DefaultDark",
         dark: {
           primary: '#09ffff',
           secondary: colors.blueGrey.lighten2,
@@ -102,7 +103,7 @@ export default {
         }
       },
       {
-        name: "Blue",
+        name: "blue",
         dark: {
           primary: "#21CFF3",
           accent: "#FF4081",
@@ -125,7 +126,7 @@ export default {
         }
       },
       {
-        name: "Red",
+        name: "red",
         dark: {
           primary: "#ff0000",
           accent: "#7CB342",

@@ -72,7 +72,7 @@ export default {
   .cls-logo-3 {
     fill: rgb(var(--v-theme-primary));
     /* filter: drop-shadow(0px 0px 0.8vw rgb(var(--v-theme-primary))) ; */
-    animation: identifier 1.5s linear forwards infinite;;
+    animation: identifier 1.5s linear forwards infinite;
   }
 
   @keyframes identifier {

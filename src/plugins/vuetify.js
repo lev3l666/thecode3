@@ -68,7 +68,35 @@ const code3DefaultDark = {
   variables: {
     '--v-theme-primary': '#09ffff',
     'theme-primary': '#09ffff',
+  }
+}
 
+
+const blue = {
+  dark: true,
+  colors: {
+    primary: "#21CFF3",
+    accent: "#FF4081",
+    secondary: "#21dc79",
+    success: "#86af3f",
+    info: "#f34fc6",
+    warning: "#FB8C00",
+    error: "#FF5252",
+    background: '#383838',
+  }
+}
+
+const red = {
+  dark: true,
+  colors: {
+    primary: "#ff0000",
+    accent: "#7CB342",
+    secondary: "#689F38",
+    success: "#4CAF50",
+    info: "#6156d8",
+    warning: "#1565C0",
+    error: "#FF7043",
+    background: '#383838',
   }
 }
 
@@ -76,7 +104,7 @@ const code3DefaultDark = {
 export default createVuetify({
   theme: {
     defaultTheme: 'code3DefaultDark',
-    themes: { code3DefaultDark, myCustomLightTheme },
+    themes: { code3DefaultDark, myCustomLightTheme, blue, red },
   },
   //
 })
