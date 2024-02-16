@@ -67,6 +67,11 @@
   "resolved" "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.10.0.tgz"
   "version" "4.10.0"
 
+"@studio-freight/lenis@^1.0.35":
+  "integrity" "sha512-dduQqZERC5EaJSVGBoCt2WdPFQlr39zFewkQxvJcYZrMl1aVTPPIQCnZMqIjl4KZBQIL3kIXes+HP22T9XVh4w=="
+  "resolved" "https://registry.npmjs.org/@studio-freight/lenis/-/lenis-1.0.35.tgz"
+  "version" "1.0.35"
+
 "@types/estree@^1.0.0", "@types/estree@1.0.5":
   "integrity" "sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw=="
   "resolved" "https://registry.npmjs.org/@types/estree/-/estree-1.0.5.tgz"

@@ -47,6 +47,18 @@ function toggleTheme (themeName) {
   // theme.global.name.value = theme.global.current.value.dark ? 'code3DefaultDark' : 'myCustomLightTheme'
   theme.global.name.value = themeName;
 }
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
 </script>
 <script>
 import TheHeader from './TheHeader.vue';
@@ -56,6 +68,8 @@ import footerImg from "./svg/footerImg.vue";
 import calamarOficinista from './svg/calamarOficinista.vue';
 import submarinoImg from './svg/submarinoImg.vue';
 import colors from 'vuetify/util/colors'
+import Lenis from '@studio-freight/lenis'
+
 // import salpicaduraBanner from './svg/salpicaduraBanner.vue';
 export default {
   name: 'TheLanding',
@@ -208,6 +222,25 @@ export default {
 };
 </script>
 <style>
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
 #salpicadura { 
     filter: drop-shadow(0px 0px 0.5vw rgb(var(--v-theme-primary)))  brightness(0.7);
     }
